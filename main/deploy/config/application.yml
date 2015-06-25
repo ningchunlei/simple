@@ -1,0 +1,9 @@
+simplemysql:
+  enable: true
+  url: "jdbc:mysql://172.32.21.9:3306/test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useAffectedRows=true"
+  driverClassName: "com.mysql.jdbc.Driver"
+  username: "root"
+  password: "mysqlniutest"
+  maxIdle: 2
+  maxActive: 2
+  validationQuery: "select 1"

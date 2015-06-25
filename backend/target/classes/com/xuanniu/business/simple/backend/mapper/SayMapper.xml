@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xuanniu.business.simple.backend.mapper.SayMapper" >
+    <insert id="storeSay" parameterType="com.xuanniu.business.simple.service.domain.Message" >
+        insert into say
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="say != null" >
+                say,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="say != null" >
+                #{say}
+            </if>
+        </trim>
+    </insert>
+
+</mapper>
